@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Siddhant Pandey — Computer Science student and freelance web developer creating modern, responsive websites.">
+  <title>Siddhant — Portfolio</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- =========================================
+       HEADER / NAVIGATION
+  ========================================== -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="logo" href="#home">SP<span>.</span></a>
+
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-navigation">
+        ☰
+      </button>
+
+      <div class="nav-links" id="primary-navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <a class="nav-cta" href="#contact">Let's work together</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- =========================================
+         HERO SECTION
+    ========================================== -->
+    <section id="home" class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">AVAILABLE FOR FREELANCE WORK</p>
+
+        <h1>
+          I build modern websites for
+          <span>businesses that want to grow.</span>
+        </h1>
+
+        <p class="hero-text">
+          I'm <strong>Siddhant Pandey</strong>, a Computer Science student and
+          developer who creates modern, responsive and user-friendly websites.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">View my work</a>
+          <a class="button secondary" href="#contact">Start a project →</a>
+        </div>
+
+        <div class="quick-stats">
+          <div>
+            <strong>03</strong>
+            <span>Projects</span>
+          </div>
+          <div>
+            <strong>100%</strong>
+            <span>Responsive</span>
+          </div>
+          <div>
+            <strong>24h</strong>
+            <span>Typical reply</span>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <div class="status"><span></span> Open to freelance</div>
+        <div class="avatar" aria-hidden="true">SP</div>
+        <h2>Siddhant Pandey</h2>
+        <p>Computer Science Student · Developer</p>
+
+        <div class="mini-tags" aria-label="Primary technologies">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+      </aside>
+    </section>
+
+    <!-- =========================================
+         ABOUT SECTION
+    ========================================== -->
+    <section id="about" class="section container">
+      <div class="section-label">01 — About</div>
+
+      <div class="two-column">
+        <div>
+          <h2>I turn ideas into <em>clean digital experiences.</em></h2>
+        </div>
+
+        <div>
+          <p>
+            I'm a Computer Science student passionate about web development,
+            software development and building practical projects.
+          </p>
+          <p>
+            I work with modern web technologies to create responsive websites
+            for businesses, individuals and personal brands.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         PROJECTS SECTION
+    ========================================== -->
+    <section id="projects" class="section container">
+      <div class="section-heading">
+        <div>
+          <div class="section-label">02 — Selected work</div>
+          <h2>Projects I've built</h2>
+        </div>
+        <p>Real websites I've designed and developed.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 01: Mobile Shop -->
+        <article class="project-card featured">
+          <div class="project-visual">
+            <img src="images/mobile-shop.png" alt="Mobile shop website landing page" loading="lazy">
+            <span>01</span>
+          </div>
+
+          <div class="project-info">
+            <div class="project-meta">Business Website · HTML / CSS / JS</div>
+            <h3>Mobile Shop Landing Page</h3>
+            <p>
+              A modern responsive website created for a mobile shop to showcase
+              smartphones, accessories, store information and contact options.
+            </p>
+
+            <div class="project-links">
+              <a href="https://siddhantpandey2306-gif.github.io/website-preview/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+              <a href="https://github.com/siddhantpandey2306-gif/website-preview" target="_blank" rel="noopener noreferrer">Source Code ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 02: Gym -->
+        <article class="project-card">
+          <div class="project-visual">
+            <img src="images/gym.png" alt="House Of Fitness gym website" loading="lazy">
+            <span>02</span>
+          </div>
+
+          <div class="project-info">
+            <div class="project-meta">Business Website · HTML / CSS / JS</div>
+            <h3>House Of Fitness</h3>
+            <p>
+              A bold and modern gym website designed to present the fitness
+              brand, services and training experience while encouraging visitors
+              to get started.
+            </p>
+
+            <div class="project-links">
+              <a href="https://siddhantpandey2306-gif.github.io/Gym-website-Preview/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+              <a href="https://github.com/siddhantpandey2306-gif/Gym-website-Preview" target="_blank" rel="noopener noreferrer">Source Code ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 03: Portfolio -->
+        <article class="project-card">
+          <div class="project-visual">
+            <img src="images/portfolio.png" alt="Siddhant Pandey personal portfolio website" loading="lazy">
+            <span>03</span>
+          </div>
+
+          <div class="project-info">
+            <div class="project-meta">Personal Project · HTML / CSS / JS</div>
+            <h3>Personal Portfolio</h3>
+            <p>
+              A modern minimalist portfolio designed to present my skills,
+              projects and freelance services.
+            </p>
+
+            <div class="project-links">
+              <a href="#home">Live Demo ↗</a>
+              <a href="https://github.com/siddhantpandey2306-gif" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================================
+         SKILLS SECTION
+    ========================================== -->
+    <section id="skills" class="section container">
+      <div class="section-label">03 — Skills</div>
+
+      <div class="skills-layout">
+        <h2>
+          Tools I use to turn ideas into
+          <em>websites & applications.</em>
+        </h2>
+
+        <div class="skills-list">
+          <!-- Frontend -->
+          <div>
+            <span>01</span>
+            <strong>HTML5</strong>
+            <small>Semantic structure</small>
+          </div>
+          <div>
+            <span>02</span>
+            <strong>CSS3</strong>
+            <small>Responsive design</small>
+          </div>
+          <div>
+            <span>03</span>
+            <strong>JavaScript</strong>
+            <small>Interactive experiences</small>
+          </div>
+
+          <!-- Backend / Programming -->
+          <div>
+            <span>04</span>
+            <strong>Java</strong>
+            <small>Programming & backend logic</small>
+          </div>
+          <div>
+            <span>05</span>
+            <strong>Node.js</strong>
+            <small>Backend development</small>
+          </div>
+          <div>
+            <span>06</span>
+            <strong>Express.js</strong>
+            <small>REST API development</small>
+          </div>
+
+          <!-- Database / Tools -->
+          <div>
+            <span>07</span>
+            <strong>MySQL</strong>
+            <small>Database management</small>
+          </div>
+          <div>
+            <span>08</span>
+            <strong>Git & GitHub</strong>
+            <small>Version control</small>
+          </div>
+          <div>
+            <span>09</span>
+            <strong>Responsive UI</strong>
+            <small>Mobile-first layouts</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         PROCESS SECTION
+    ========================================== -->
+    <section class="process section">
+      <div class="container">
+        <div class="section-label">04 — Process</div>
+
+        <div class="process-grid">
+          <div>
+            <span>01</span>
+            <h3>Understand</h3>
+            <p>We define what you need, who it's for and what success looks like.</p>
+          </div>
+          <div>
+            <span>02</span>
+            <h3>Build</h3>
+            <p>I create a clean, responsive website with your goals at the center.</p>
+          </div>
+          <div>
+            <span>03</span>
+            <h3>Launch</h3>
+            <p>We polish the details, test the experience and get your site online.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         CONTACT SECTION
+    ========================================== -->
+    <section id="contact" class="contact section container">
+      <div class="contact-box">
+        <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
+        <h2>Let's build something <em>useful.</em></h2>
+        <p>
+          Tell me what you're working on. I'm happy to discuss a website,
+          landing page or small web project.
+        </p>
+
+        <a class="button primary" href="mailto:siddhantpandey4444@gmail.com">
+          siddhantpandey4444@gmail.com ↗
+        </a>
+
+        <div class="socials">
+          <a href="https://github.com/siddhantpandey2306-gif" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================
+       FOOTER
+  ========================================== -->
+  <footer class="footer container">
+    <span>© 2026 Siddhant Pandey</span>
+    <span>Designed by Siddhant.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
