@@ -68,3 +68,4 @@ No database or backend server is required to run the portfolio website.
 ## License
 
 This project is created for personal portfolio and freelance purposes.
+
