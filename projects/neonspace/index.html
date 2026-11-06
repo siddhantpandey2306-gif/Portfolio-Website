@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>NeonSpace — Cyberpunk Arcade Odyssey</title>
+  <link rel="icon" type="image/jpeg" href="../../images/profile.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+    }
+    body {
+      background: #040612;
+      color: #fff;
+      font-family: 'Inter', system-ui, sans-serif;
+      overflow: hidden;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    #neonCanvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      display: block;
+    }
+    /* Top Bar */
+    .top-nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 24px;
+      background: linear-gradient(to bottom, rgba(4, 6, 18, 0.85), transparent);
+      backdrop-filter: blur(8px);
+    }
+    .brand-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .back-btn {
+      color: #cbd5e1;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 999px;
+      transition: all 0.2s;
+    }
+    .back-btn:hover {
+      background: rgba(255, 255, 255, 0.18);
+      color: #fff;
+      transform: translateX(-2px);
+    }
+    .game-title {
+      font-size: 16px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: linear-gradient(135deg, #00f0ff, #ff007f);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hud {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+    }
+    .hud-box {
+      background: rgba(10, 16, 36, 0.75);
+      border: 1px solid rgba(0, 240, 255, 0.3);
+      padding: 6px 14px;
+      border-radius: 8px;
+    }
+    .hud-label {
+      color: #94a3b8;
+      font-size: 10px;
+      display: block;
+      text-transform: uppercase;
+    }
+    .hud-val {
+      color: #00f0ff;
+      font-size: 16px;
+      font-weight: 700;
+    }
+    /* Overlay Screen */
+    .overlay-screen {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 20;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at center, rgba(8, 14, 34, 0.92) 0%, rgba(4, 6, 18, 0.98) 100%);
+      text-align: center;
+      padding: 24px;
+      backdrop-filter: blur(12px);
+    }
+    .overlay-card {
+      max-width: 520px;
+      width: 100%;
+      background: rgba(14, 22, 48, 0.75);
+      border: 1px solid rgba(0, 240, 255, 0.4);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 40px rgba(0, 240, 255, 0.15);
+      border-radius: 24px;
+      padding: 40px;
+    }
+    .overlay-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #00f0ff;
+      background: rgba(0, 240, 255, 0.12);
+      border: 1px solid rgba(0, 240, 255, 0.35);
+      padding: 5px 12px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+    .overlay-title {
+      font-size: 38px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, #fff 20%, #00f0ff 60%, #ff007f 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .overlay-desc {
+      color: #cbd5e1;
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+    .controls-hint {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 30px;
+      font-size: 12px;
+      color: #94a3b8;
+    }
+    .controls-hint span {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 6px 12px;
+      border-radius: 8px;
+    }
+    .start-btn {
+      width: 100%;
+      padding: 16px 28px;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #040612;
+      background: linear-gradient(135deg, #00f0ff, #38bdf8);
+      border: none;
+      border-radius: 999px;
+      cursor: pointer;
+      box-shadow: 0 10px 30px rgba(0, 240, 255, 0.4);
+      transition: all 0.2s;
+    }
+    .start-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 40px rgba(0, 240, 255, 0.6);
+    }
+    .gameover-stats {
+      margin: 20px 0;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 15px;
+      color: #00f0ff;
+    }
+  </style>
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="brand-wrap">
+      <a class="back-btn" href="../../index.html#projects">← Portfolio</a>
+      <span class="game-title">NeonSpace</span>
+    </div>
+    <div class="hud">
+      <div class="hud-box">
+        <span class="hud-label">Score</span>
+        <span class="hud-val" id="hudScore">0</span>
+      </div>
+      <div class="hud-box">
+        <span class="hud-label">Shields</span>
+        <span class="hud-val" id="hudShield" style="color: #22c55e;">100%</span>
+      </div>
+      <div class="hud-box">
+        <span class="hud-label">Multiplier</span>
+        <span class="hud-val" id="hudMult" style="color: #ff007f;">x1</span>
+      </div>
+    </div>
+  </nav>
+
+  <canvas id="neonCanvas"></canvas>
+
+  <!-- Start Screen -->
+  <div class="overlay-screen" id="startScreen">
+    <div class="overlay-card">
+      <span class="overlay-badge">⚡ 60FPS Cyber Arcade Web App</span>
+      <h1 class="overlay-title">NEONSPACE</h1>
+      <p class="overlay-desc">
+        Pilot your cybernetic starship through high-velocity asteroid belts and hostile neon drones. Fire pulse lasers, chain multipliers, and set the galaxy high score!
+      </p>
+      <div class="controls-hint">
+        <span>WASD / Arrow Keys: Move</span>
+        <span>Space / Click: Fire Lasers</span>
+      </div>
+      <button class="start-btn" id="startBtn">Launch Starship</button>
+    </div>
+  </div>
+
+  <!-- Game Over Screen -->
+  <div class="overlay-screen" id="gameOverScreen" style="display: none;">
+    <div class="overlay-card">
+      <span class="overlay-badge" style="color: #ef4444; border-color: rgba(239, 68, 68, 0.4); background: rgba(239, 68, 68, 0.1);">Vessel Destroyed</span>
+      <h2 class="overlay-title" style="font-size: 32px;">Game Over</h2>
+      <div class="gameover-stats">
+        <p>Final Score: <span id="finalScore" style="color: #fff; font-weight: 700;">0</span></p>
+        <p style="margin-top: 6px; font-size: 13px; color: #94a3b8;">High Score: <span id="highScore" style="color: #00f0ff;">0</span></p>
+      </div>
+      <button class="start-btn" id="restartBtn">Reboot Systems</button>
+      <div style="margin-top: 16px;">
+        <a class="back-btn" href="../../index.html#projects" style="width: 100%; justify-content: center;">Return to Portfolio</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="neonspace.js"></script>
+</body>
+</html>

@@ -17,14 +17,14 @@ I'm **Siddhant Pandey**, a Computer Science student and **Full-Stack & Game Deve
 ### 01 — Riftborn (Featured)
 An atmospheric dimensional-rift web adventure featuring real-time procedural particle physics, dynamic cosmic anomalies, and high-performance audio-visual mechanics.
 - **Technologies**: WebGL, HTML5 Canvas, JavaScript, CSS3
-- **Live Demo**: [Riftborn Live](https://siddhantpandey2306-gif.github.io/Riftborn/)
-- **GitHub**: [Riftborn Repository](https://github.com/siddhantpandey2306-gif/Riftborn)
+- **Live Demo**: [Play Riftborn Demo](https://siddhantpandey2306-gif.github.io/Portfolio-Website/projects/riftborn/index.html)
+- **GitHub Source**: [Riftborn Source Code](https://github.com/siddhantpandey2306-gif/Portfolio-Website/tree/main/projects/riftborn)
 
 ### 02 — NeonSpace
 A high-velocity cyberpunk space runner engineered with 60FPS canvas physics, reactive neon particle trails, and responsive retro-futuristic controls.
 - **Technologies**: HTML5 Canvas, Web Audio API, JavaScript, CSS3
-- **Live Demo**: [NeonSpace Live](https://siddhantpandey2306-gif.github.io/NeonSpace/)
-- **GitHub**: [NeonSpace Repository](https://github.com/siddhantpandey2306-gif/NeonSpace)
+- **Live Demo**: [Play NeonSpace Demo](https://siddhantpandey2306-gif.github.io/Portfolio-Website/projects/neonspace/index.html)
+- **GitHub Source**: [NeonSpace Source Code](https://github.com/siddhantpandey2306-gif/Portfolio-Website/tree/main/projects/neonspace)
 
 ### 03 — House Of Fitness
 A bold and modern gym website designed to present the fitness brand, services and training experience while encouraging visitors to get started.
