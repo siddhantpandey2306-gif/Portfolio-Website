@@ -1,95 +1,59 @@
-# Siddhant Pandey — Portfolio
+# Siddhant Pandey — Full-Stack & Game Developer
 
-A modern minimalist personal portfolio website for showcasing my web development projects, skills, and freelance services.
+A clean, responsive, and interactive personal portfolio showcasing full-stack web applications, scalable backend systems, and real-time browser game experiences.
 
 ## About
 
-I'm Siddhant Pandey, a Computer Science student and developer focused on building modern, responsive, and user-friendly websites.
+I'm Siddhant Pandey, a Computer Science student and Full-Stack & Game Developer focused on building high-performance web applications, scalable REST APIs, and immersive real-time browser games.
 
-## Projects
+LinkedIn: https://www.linkedin.com/in/siddhant-pandey-b86201445/
+GitHub: https://github.com/siddhantpandey2306-gif
+Email: siddhantpandey4444@gmail.com
 
-### 01 — Riftborn
+## Featured Projects
+
+### 01 — Riftborn (Featured)
 An atmospheric dimensional-rift web adventure featuring real-time procedural particle physics, dynamic cosmic anomalies, and high-performance audio-visual mechanics.
-
-- WebGL
-- HTML5 Canvas
-- JavaScript
-- CSS3
+- WebGL, HTML5 Canvas, JavaScript, CSS3
 - Live Demo: https://siddhantpandey2306-gif.github.io/Riftborn/
 - GitHub: https://github.com/siddhantpandey2306-gif/Riftborn
 
 ### 02 — NeonSpace
 A high-velocity cyberpunk space runner engineered with 60FPS canvas physics, reactive neon particle trails, and responsive retro-futuristic controls.
-
-- HTML5 Canvas
-- Web Audio API
-- JavaScript
-- CSS3
+- HTML5 Canvas, Web Audio API, JavaScript, CSS3
 - Live Demo: https://siddhantpandey2306-gif.github.io/NeonSpace/
 - GitHub: https://github.com/siddhantpandey2306-gif/NeonSpace
 
 ### 03 — House Of Fitness
 A bold and modern gym website designed to present the fitness brand, services and training experience while encouraging visitors to get started.
-
-- HTML5
-- CSS3
-- JavaScript
+- HTML5, CSS3, JavaScript
 - Live Demo: https://siddhantpandey2306-gif.github.io/Gym-website-Preview/
 - GitHub: https://github.com/siddhantpandey2306-gif/Gym-website-Preview
 
-## Skills
+## Technical Skills (Grouped)
 
-### Frontend
-- HTML5
-- CSS3
-- JavaScript
-- Responsive UI
+### 01 / Core Programming Languages
+- JavaScript (ES6+), TypeScript, Java, HTML5, CSS3, SQL
 
-### Backend / Programming
-- Java
-- Node.js
-- Express.js
-- REST APIs
+### 02 / Frameworks & Web Ecosystem
+- Node.js, Express.js, React.js, EJS Templating, Tailwind CSS
 
-### Database
-- MySQL
+### 03 / Game Development & Graphics
+- HTML5 Canvas API, WebGL & Three.js, Game Loops & Physics, Web Audio API, Particle Systems
 
-### Tools
-- Git
-- GitHub
+### 04 / Databases & Architecture
+- MySQL, MongoDB, RESTful API Design, MVC Architecture
 
-## Project Structure
-
-portfolio/
-│
-├── index.html
-├── style.css
-├── script.js
-│
-├── images/
-│   ├── riftborn.png
-│   ├── neonspace.png
-│   ├── gym.png
-│   ├── mobile-shop.png
-│   └── portfolio.png
-│
-└── README.md
+### 05 / Developer Tools & Workflow
+- Git & GitHub, VS Code, Postman, Vite / npm, Linux & Bash
 
 ## How to Run
 
-1. Download or clone the repository.
-2. Open the project folder.
-3. Open `index.html` in your browser.
-
-No database or backend server is required to run the portfolio website.
+1. Clone or download the repository.
+2. Open index.html in any modern web browser.
 
 ## Contact
 
+LinkedIn: https://www.linkedin.com/in/siddhant-pandey-b86201445/
 Email: siddhantpandey4444@gmail.com
-
-GitHub:
-https://github.com/siddhantpandey2306-gif
-
-## License
-
-This project is created for personal portfolio and freelance purposes.
+GitHub: https://github.com/siddhantpandey2306-gif

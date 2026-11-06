@@ -1,71 +1,99 @@
-# Siddhant Pandey — Portfolio
+# Siddhant Pandey — Full-Stack & Game Developer
 
-A modern minimalist personal portfolio website for showcasing my web development projects, skills, and freelance services.
+A clean, responsive, and interactive personal portfolio showcasing full-stack web applications, scalable backend systems, and real-time browser game experiences.
 
-## About
+## 🚀 About
 
-I'm Siddhant Pandey, a Computer Science student and developer focused on building modern, responsive, and user-friendly websites.
+I'm **Siddhant Pandey**, a Computer Science student and **Full-Stack & Game Developer** focused on building high-performance web applications, scalable REST APIs, and immersive real-time browser games.
 
-## Projects
+- 🌐 **LinkedIn**: [Siddhant Pandey on LinkedIn](https://www.linkedin.com/in/siddhant-pandey-b86201445/)
+- 💻 **GitHub**: [@siddhantpandey2306-gif](https://github.com/siddhantpandey2306-gif)
+- ✉️ **Email**: [siddhantpandey4444@gmail.com](mailto:siddhantpandey4444@gmail.com)
 
-### 01 — Riftborn
+---
+
+## 🎮 Featured Projects
+
+### 01 — Riftborn (Featured)
 An atmospheric dimensional-rift web adventure featuring real-time procedural particle physics, dynamic cosmic anomalies, and high-performance audio-visual mechanics.
-
 - **Technologies**: WebGL, HTML5 Canvas, JavaScript, CSS3
 - **Live Demo**: [Riftborn Live](https://siddhantpandey2306-gif.github.io/Riftborn/)
 - **GitHub**: [Riftborn Repository](https://github.com/siddhantpandey2306-gif/Riftborn)
 
 ### 02 — NeonSpace
 A high-velocity cyberpunk space runner engineered with 60FPS canvas physics, reactive neon particle trails, and responsive retro-futuristic controls.
-
 - **Technologies**: HTML5 Canvas, Web Audio API, JavaScript, CSS3
 - **Live Demo**: [NeonSpace Live](https://siddhantpandey2306-gif.github.io/NeonSpace/)
 - **GitHub**: [NeonSpace Repository](https://github.com/siddhantpandey2306-gif/NeonSpace)
 
 ### 03 — House Of Fitness
 A bold and modern gym website designed to present the fitness brand, services and training experience while encouraging visitors to get started.
-
 - **Technologies**: HTML5, CSS3, JavaScript
 - **Live Demo**: [House Of Fitness Live](https://siddhantpandey2306-gif.github.io/Gym-website-Preview/)
 - **GitHub**: [House Of Fitness Repository](https://github.com/siddhantpandey2306-gif/Gym-website-Preview)
 
-## Skills
+---
 
-### Frontend
-- HTML5
-- CSS3
-- JavaScript
-- Responsive UI
+## 🛠️ Grouped Technical Skills
 
-### Backend / Programming
-- Java
-- Node.js
-- Express.js
-- REST APIs
+### 01 / Core Programming Languages
+- **JavaScript (ES6+)**: Asynchronous event loop, closures, promises, Canvas/DOM scripting & modern syntax.
+- **TypeScript**: Type safety, interfaces, strict contracts & scalable application architecture.
+- **Java**: Object-oriented systems, data structures, algorithms & enterprise backend logic.
+- **HTML5**: Semantic structure, Canvas 2D, Web Audio API, Web Storage & accessibility.
+- **CSS3**: Modern Flexbox, CSS Grid, custom properties, responsive design & keyframe animations.
+- **SQL**: Relational queries, table normalization, primary/foreign indexing & schema design.
 
-### Database
-- MySQL
+### 02 / Frameworks & Web Ecosystem
+- **Node.js**: High-performance asynchronous server runtime, file streaming & module systems.
+- **Express.js**: RESTful routing, custom middleware pipelines, authentication & controller patterns.
+- **React.js**: Component-driven UI architecture, hooks, virtual DOM & reactive state management.
+- **EJS Templating**: Server-side view rendering, dynamic partials & data-injected SSR web pages.
+- **Tailwind CSS**: Utility-first responsive layout design, consistent design tokens & rapid styling.
 
-### Tools
-- Git
-- GitHub
+### 03 / Game Development & Graphics
+- **HTML5 Canvas API**: Hardware-accelerated 2D rendering, sprite sheet animation & coordinate transforms.
+- **WebGL & Three.js**: 3D scene graphs, lighting, camera controllers, GLSL shaders & procedural meshes.
+- **Game Loops & Physics**: Fixed/delta-time step loops (60-120FPS), velocity integration & collision detection.
+- **Web Audio API**: Dynamic audio synthesizers, real-time gain/frequency controls & sound cues.
+- **Procedural Particle Systems**: Particle emission pools, alpha decay algorithms & burst visuals.
 
-## How to Run
+### 04 / Databases & Architecture
+- **MySQL**: Relational database modeling, ACID transactions, foreign keys & query optimization.
+- **MongoDB**: NoSQL document modeling, flexible collections, BSON documents & aggregation.
+- **RESTful API Design**: Standardized HTTP status codes, structured JSON payloads & stateless auth.
+- **MVC Architecture**: Clean separation of concerns across models, views, controllers & service layers.
+
+### 05 / Developer Tools & Workflow
+- **Git & GitHub**: Branching strategies, interactive rebasing, merge resolutions, PRs & Pages deployment.
+- **VS Code**: Custom workspaces, integrated debugging, ESLint/Prettier automation & terminal workflow.
+- **Postman**: Endpoint debugging, request header inspection, environment variables & collections.
+- **Vite / npm**: Lightning-fast HMR dev servers, module bundling, dependency management & scripts.
+
+---
+
+## 💻 How to Run Locally
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/siddhantpandey2306-gif/Portfolio-Website.git
    ```
-2. Open `index.html` in your browser.
+2. Navigate to the project directory:
+   ```bash
+   cd Portfolio-Website
+   ```
+3. Open `index.html` in your browser.
 
-No database or backend server is required to run the portfolio website.
+No database or build step is required to run the portfolio website.
 
-## Contact
+---
 
+## 📬 Contact & Connect
+
+- **LinkedIn**: [linkedin.com/in/siddhant-pandey-b86201445](https://www.linkedin.com/in/siddhant-pandey-b86201445/)
 - **Email**: [siddhantpandey4444@gmail.com](mailto:siddhantpandey4444@gmail.com)
 - **GitHub**: [@siddhantpandey2306-gif](https://github.com/siddhantpandey2306-gif)
 
-## License
+## 📄 License
 
-This project is created for personal portfolio and freelance purposes.
-
+This project is created for personal portfolio and professional showcasing purposes.
