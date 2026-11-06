@@ -14,17 +14,17 @@ I'm **Siddhant Pandey**, a Computer Science student and **Full-Stack & Game Deve
 
 ## 🎮 Featured Projects
 
-### 01 — Riftborn (Featured)
-An atmospheric dimensional-rift web adventure featuring real-time procedural particle physics, dynamic cosmic anomalies, and high-performance audio-visual mechanics.
-- **Technologies**: WebGL, HTML5 Canvas, JavaScript, CSS3
-- **Live Demo**: [Play Riftborn Demo](https://siddhantpandey2306-gif.github.io/Portfolio-Website/projects/riftborn/index.html)
-- **GitHub Source**: [Riftborn Source Code](https://github.com/siddhantpandey2306-gif/Portfolio-Website/tree/main/projects/riftborn)
+### 01 — RiftBorn: Combat (Featured)
+An atmospheric dimensional combat action web game featuring real-time procedural mechanics, dynamic particle physics, and fast-paced reactive browser controls.
+- **Technologies**: HTML5 Canvas, Game Physics, Combat Loops, JavaScript ES6+
+- **Live Demo**: [Play RiftBorn Combat](https://siddhantpandey2306-gif.github.io/RiftBorn-Combat/)
+- **GitHub Repository**: [RiftBorn-Combat Source Code](https://github.com/siddhantpandey2306-gif/RiftBorn-Combat)
 
-### 02 — NeonSpace
+### 02 — Neon Escape
 A high-velocity cyberpunk space runner engineered with 60FPS canvas physics, reactive neon particle trails, and responsive retro-futuristic controls.
 - **Technologies**: HTML5 Canvas, Web Audio API, JavaScript, CSS3
-- **Live Demo**: [Play NeonSpace Demo](https://siddhantpandey2306-gif.github.io/Portfolio-Website/projects/neonspace/index.html)
-- **GitHub Source**: [NeonSpace Source Code](https://github.com/siddhantpandey2306-gif/Portfolio-Website/tree/main/projects/neonspace)
+- **Live Demo**: [Play Neon Escape](https://siddhantpandey2306-gif.github.io/Neon-Escape/)
+- **GitHub Repository**: [Neon-Escape Source Code](https://github.com/siddhantpandey2306-gif/Neon-Escape)
 
 ### 03 — House Of Fitness
 A bold and modern gym website designed to present the fitness brand, services and training experience while encouraging visitors to get started.
